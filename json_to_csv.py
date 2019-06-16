@@ -44,7 +44,7 @@ key_list = list(dict.fromkeys(key_list))
 
 print("Number of columns without duplicates: " + str(len(key_list)))
 
-print("Number of rows: " + str(len(json_list)))
+print("Number of rows: " + str(len(json_list) + 1))
 
 # That's useful for my project. It moves "<page title>" in front of key_list.
 # If you are not me, skip this one. If you are me, damn you are awesome!
