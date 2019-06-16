@@ -26,7 +26,8 @@ for paths, subdirs, files in os.walk("."):
         file_path = os.path.join(paths, file)
         filename, file_extension = os.path.splitext(file_path)
         if file_extension == json_extension:
-            print(file_path)
+            # Uncomment this print to see in the terminal the json that is about to be examined
+            # print(file_path)
             with open(file_path) as json_file:
                 json_content = json.load(json_file)
                 current_json = {}
